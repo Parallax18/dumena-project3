@@ -127,7 +127,8 @@ section{
 .hero{
     width: 100%;
     height: 80vh;
-    background: linear-gradient(135deg, rgba(40, 91, 95, 0.9) 0%, rgba(40, 91, 95, 0.8) 100%), url(./images/pexels-julia-m-cameron-4144144.jpg);
+    background: linear-gradient(135deg, rgba(40, 75, 95, 0.9) 0%, rgba(40, 75, 95, 0.8) 100%), url(./images/ladywiithlaptop.jpg);
+    /* background: linear-gradient(135deg, rgba(40, 91, 95, 0.9) 0%, rgba(40, 91, 95, 0.8) 100%), url(./images/pexels-julia-m-cameron-4144144.jpg); */
     border: 0.1px solid transparent;
     /* background: linear-gradient(90deg, rgba(79, 154, 153, 0.753) 0%, rgba(37,87,97,0.6811099439775911) 52%, rgba(0, 213, 255, 0.644) 100%), url(./images/pexels-julia-m-cameron-4144144.jpg) center center/cover no-repeat; */
     /* background: linear-gradient(135deg, rgba(62, 95, 40, 0.9) 0%, rgba(127, 175, 95, 0.8) 100%), url(./images/pexels-julia-m-cameron-4144144.jpg); */
@@ -238,7 +239,7 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(40, 91, 95, 0.9) 0%, rgba(40, 91, 95, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(40, 75, 95, 0.9) 0%, rgba(40, 75, 95, 0.8) 100%);
     z-index: -1;
 }
 
@@ -422,7 +423,7 @@ section{
     left: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(40, 91, 95, 0.9) 0%, rgba(40, 91, 95, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(40, 75, 95, 0.9) 0%, rgba(40, 75, 95, 0.8) 100%);
     z-index: 1;
 }
 
@@ -445,7 +446,7 @@ section{
     /* background: rgb(2,0,36); */
     /* background: rgb(79,154,153); */
     /* background: linear-gradient(90deg, rgba(79, 154, 153, 0.753) 0%, rgba(37,87,97,0.6811099439775911) 52%, rgba(0, 213, 255, 0.644) 100%), url(./images/library.jpg) center center/cover no-repeat; */
-    background: linear-gradient(135deg, rgba(40, 91, 95, 0.9) 0%, rgba(40, 91, 95, 0.8) 100%), url(./images/library.jpg) center center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(40, 75, 95, 0.9) 0%, rgba(40, 75, 95, 0.8) 100%), url(./images/library.jpg) center center/cover no-repeat;
     background-attachment: fixed;
     position: relative;
 }
@@ -550,7 +551,7 @@ section{
 }
 
 .invest-btn-link{
-    background: linear-gradient(135deg, rgba(40, 91, 95, 0.9) 0%, rgba(40, 91, 95, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(40, 75, 95, 0.9) 0%, rgba(40, 75, 95, 0.8) 100%);
     color: var(--white);
     justify-content: center;
     display: flex;
@@ -565,6 +566,8 @@ section{
     box-shadow: 1px 1px 1px 1px rgba(192, 192, 192, 0.753);
 }
 /* end of invest yourself section component */
+
+
 
 
 /* footer section components */
@@ -783,7 +786,7 @@ section{
 
 @media screen and (min-width: 1200px){
     .hero{
-        height: 75vh;
+        height: 80vh;
     }
 
 
