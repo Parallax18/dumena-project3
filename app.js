@@ -1,13 +1,23 @@
-//function expression tpo select elements
 
-const selectElement = (s) => document.querySelector(s);
+//select elements for index page
+const menuBtn = document.querySelector('.open');
+const closeMenuBtn = document.querySelector('.close');
+const menu = document.querySelector('.nav-list');
 
-//open menu on click
-selectElement(s,'.open').addEventListener('click', () => {
-    selectElement(s,'.nav-list').classList.add('active');
-})
 
-// close menu on click
-selectElement(s,'.close').addEventListener('click', () => {
-    selectElement(s,'.nav-list').classList.remove('active');
-})
+
+//function to open menu
+function openMenu(){
+    menu.classList.add('active');
+}
+//function to close menu
+function closeMenu(){
+    menu.classList.remove('active');
+}
+
+//Event listeners
+menuBtn.addEventListener('click', openMenu);
+closeMenuBtn.addEventListener('click', closeMenu);
+
+
+
