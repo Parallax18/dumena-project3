@@ -236,7 +236,7 @@ section{
 
 .course-grid-item{
     height: 40rem;
-    padding: 5rem;
+    padding: 3rem;
     color: var(--white);
     position: relative;
     display: flex;
