@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* defaults */
+:root{
+    --nav-width: 92px;
+    --first-color: rgb(56, 91, 112);
+    --bg: linear-gradient(135deg, rgba(40, 75, 95, 0.9) 0%, rgba(40, 75, 95, 0.8) 100%), url(./images/libraryfull.jpg) center center/cover no-repeat;
+    --sub-color: #B6CEFC;
+    --white-color: #fff;
+    --body-fonts: 'Poppins', sans-serif;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --z-fixed: 100;
+}
+
+/* base */
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    padding: 2rem 0 0 6.75rem;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    transition: .5s;
+}
+
+h1{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+a{
+    text-decoration: none;
+}
+
+/* end of defaults */
+
+
+
+/* L NAV */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    height: 100%;
+    background: var(--bg);
+    color: var(--white-color);
+    padding: 1.5rem 1.5rem 2rem;
+    transition: .5s;
+    z-index: var(--z-fixed);
+}
+/* End of L NAV */
+
+
+
+/* NAV */
+.nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    /* border: 3px solid yellow; */
+}
+ 
+.nav-brand{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+ 
+.nav-toggle{
+    font-size: 1.25rem;
+    padding: .75rem;
+    cursor: pointer;
+} 
+
+.nav-logo{
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.nav-link{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: .75rem;
+    padding: .75rem;
+    color: var(--white-color);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    background-color: var(--first-color);
+}
+
+.nav-icon{
+    font-size: 1.25rem;
+}
+
+.nav-name{
+    font-size: var(--small-font-size);
+}
+
+/* End of NAV */
+
+
+/* Expander menu */
+.expander{
+    width: calc(var(--nav-width) + 9.25rem );
+}
+
+/* End of expander menu */
+
+
+
+/* Add padding body*/
+.body-pd{
+    padding: 2rem 0 0 16rem;
+}
+/* End of padding body */
+
+
+
+/* active links menu */
+.active{
+    background-color: var(--first-color);
+}
+
+/* collapse */
+.collapse{
+    grid-template-columns: 20px max-content 1fr;
+}
+
+.collapse-link{
+    justify-self: flex-end;
+    transition: .5;
+}
+
+.collapse-menu{
+    display: none;
+    padding: .75rem 2.25rem;
+}
+
+.collapse-sublink{
+    color: var(--sub-color);
+    font-size: var(--small-font-size);
+}
+
+.collapse-sublink:hover{
+    color: var(--white-color);
+}
+
+/* Show collapse */
+.showCollapse{
+    display:block ;
+}
+
+/* rotate icon */
+.rotate{
+    transform: rotate(180deg);
+    transition: .5s;
+}
+/* end of nav components */
+
+
+/* dash board content */
+/* 
+.dashboard-course-area {
+    /* border: 1px solid red; *
+  } */
+  
+  .dashboard-course-area h1 {
+    color: var(--white-text);
+    font-weight: normal;
+  }
+  
+  .dashboard-course-grid {
+    /* background: var(--white-text); */
+    /* box-shadow: 1px 1px 1px 1px silver; */
+    height: 100%;
+  }
+  
+  .dashboard-course-grid ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 1em;
+  }
+  
+  .dashboard-course-item {
+    /* background: var(--bg); */
+    box-shadow: 1px 0.7px 1px 1px rgb(226, 226, 226);
+    padding: 1em;
+    color: rgb(150, 148, 148);
+  }
+  
+  .dashboard-course-item h3 {
+    font-size: 18px;
+    margin-top: 0.5em;
+    font-weight: normal;
+  }
+  
+  .dashboard-course-item p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 1em;
+  }
+  
+  .course-img {
+    /* filter: grayscale(50%); */
+    height: 170px;
+    width: 100%;
+    transition: filter 0.1s ease-in;
+  }
+  .course-img:hover {
+    filter: grayscale(0%);
+  }
+  
+  .progress-bar {
+    background-color: rgb(206, 200, 200);
+    height: 2px;
+    margin-top: 1em;
+  }
+  
+  .progress {
+    background-color: var(--first-color);
+    height: 2.1px;
+    width: 50%;
+  }
+  
+  .progress-rating {
+    display: flex;
+    margin-top: 0.5em;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
